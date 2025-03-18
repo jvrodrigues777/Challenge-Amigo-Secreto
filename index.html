@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Amigo Secreto</title>
+  <!-- Link do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .resultado {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 24px;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Amigo Secreto</h1>
+    
+    <!-- Seção de entrada e botão de adicionar -->
+    <div class="row mb-3">
+      <div class="col-md-8 offset-md-2">
+        <input type="text" id="nomeInput" placeholder="Digite o nome do amigo" class="form-control mb-2">
+        <button id="btnAdicionar" class="btn btn-primary btn-block">Adicionar</button>
+      </div>
+    </div>
+    
+    <!-- Lista de nomes -->
+    <div class="row mb-3">
+      <div class="col-md-8 offset-md-2">
+        <ul id="listaNomes" class="list-group"></ul>
+      </div>
+    </div>
+    
+    <!-- Botão de sortear -->
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <button id="btnSortear" class="btn btn-success btn-block">Sortear Amigo</button>
+      </div>
+    </div>
+    
+    <!-- Resultado do sorteio -->
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="resultado text-center" id="resultado"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Inclusão do arquivo JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
